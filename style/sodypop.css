@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-Rounded-Bold.ttf');
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 60px;
+    color: #FFF;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #333;
+}
+
+#uptop {
+    padding: 30px;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #F34B72 0%, #F58C2B 100%);
+}
+
+#uptop a {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#uptop p {
+    color: #FFF;
+}
+
+#bubble {
+    position: absolute;
+}
+
+#speech {  
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.hoverboard:hover > #speech {
+    visibility:visible;
+}
+
+@media only screen and (max-width: 768px) {
+    #speech {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#social {
+    text-align: left;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#social a {
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+}
+
+#socialFA a {
+    background-color: #333;
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    color: #FFF;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    #resume {display: none;}
+}
+
+
+#resume {
+    float: left;
+    background: #333333;
+    box-shadow: 6px 6px 0 0 #FDFF5E;
+    border-radius: 10%;
+    height: 60px;
+    width: 95px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+#resumeText {
+    margin-top:16px;
+    margin-left: 10px;
+}
+
+#resume:hover {
+    background-color: #FDFF5E;
+}
+
+#resume, #twitter, #medium, #dribbble {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#twitter a:hover {
+    background-color: #0077B5;
+}
+
+#twitter {
+    box-shadow: 6px 6px 0 0 #0077B5;
+    border-radius: 10%; 
+}
+
+#medium a:hover {
+    background-color: #19AA6D;
+}
+
+#medium {
+    box-shadow: 6px 6px 0 0 #19AA6D;
+    border-radius: 10%; 
+}
+
+#dribbble a:hover {
+    background-color: #EA4C89;
+}
+
+#dribbble {
+    box-shadow: 6px 6px 0 0 #EA4C89;
+    border-radius: 10%; 
+}
+
+.project p {
+    color: #FFF;
+}
+
+#linkypoo {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+#classy {
+    background-image: linear-gradient(-188deg, #0B6CFF 0%, #30CDDE 100%);
+    padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    #classy,#uga, #gemquest, #more, #flavor {height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center; }
+}
+
+#classy p {
+    padding: 10px;
+}
+
+.moar a {
+    font-size: 30px;
+    color: #FFF;
+    opacity: .6;
+
+}
+
+.moar i {
+    padding: 5px;
+}
+
+.moar a:hover {
+    color: #FFF;
+    opacity: 1;
+    text-decoration: none;
+}
+
+#classmatch {
+    margin-bottom: 15px;
+}
+
+#uga {
+    background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
+    padding: 30px;
+}
+
+#pixel {
+    width: 90vw;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #pixel {width:40vw;}
+}
+
+#gemquest {
+/*    background-image: linear-gradient(-43deg,#F0F2E8 20%, #7BC7E9 100%);*/
+    background-image: linear-gradient(-120deg, #FAD961 0%, #F76B1C 69%);
+}
+
+#words {
+    padding: 50px;
+}
+
+#freddie {
+    margin-top: 20px;
+    width: 70vw;
+}
+
+@media only screen and (min-width: 768px) {
+    #freddie {width:30vw;}
+}
+
+#more {
+    padding: 50px;
+    background-image: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+}
+
+#more a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+#flavor {
+    padding: 50px;
+    color: #000;
+}
+
+#flavor h1, #flavor a {
+    color: #F24464;
+}
+
+#contact {
+    background-image: linear-gradient(-227deg, #ECB5BF 10%, #F3607B 100%);
+}
+
+#contact p {
+    color: #FFF;
+}
+
+#contact a {
+    color: #FFF;
+    text-decoration:underline;
+    margin-bottom: 15px;
+}
+
+/*
+#contact br {
+    margin-top: 5vh;
+}
+*/
+
+#centered {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+#sign-chalen {
+    width: 400px;
+    margin-top: 60px;
+}
