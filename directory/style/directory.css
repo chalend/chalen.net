@@ -1,0 +1,22 @@
+body {
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'Palanquin';
+    font-size: 20px;
+}
+
+a {
+    color: #00F;  
+}
+
+a:hover {
+    color: #FF65D9;
+    background-color: #0f0;
+}
