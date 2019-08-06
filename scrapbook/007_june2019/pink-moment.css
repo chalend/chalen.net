@@ -1,0 +1,45 @@
+.center {
+    text-align: center;
+}
+
+#pink-moment {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(img/pink-moment.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+#pink-moment > .text {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 30px;
+}
+
+#pink-moment > .text::-webkit-scrollbar {
+    display:none;
+}
+
+#pink-moment::-webkit-scrollbar {
+    display: none;
+}
+
+#pink-moment p {
+    padding-top: 5%;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+photo {
+    padding-top: 5%;
+}
