@@ -7,12 +7,42 @@ h1 {
     font-family: 'Arial', sans-serif;
     font-size: 60px;
     color: #FFF;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+    margin-bottom: 1rem;
+}
+
+.link {
+    color: #FFF;
+    text-decoration: underline;
+    opacity: .9;
+}
+
+.link:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.link:active {
+    color: #FFF;
+}
+
+.link:visited {
+    color: #FFF;
 }
 
 p {
     font-family: 'Open Sans';
     font-size: 20px;
     color: #333;
+}
+
+.role {
+    opacity: .9;
 }
 
 #uptop {
@@ -164,10 +194,6 @@ p {
      justify-content: center; }
 }
 
-#classy p {
-    padding: 10px;
-}
-
 .moar a {
     font-size: 30px;
     color: #FFF;
@@ -269,6 +295,10 @@ p {
 #sign-chalen {
     width: 400px;
     margin-top: 60px;
+}
+
+.rock-bottom {
+    padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 500px) {
