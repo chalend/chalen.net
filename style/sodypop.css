@@ -182,7 +182,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    #classy,#uga, #gemquest, #more, #flavor {height: 100vh; max-height: 700px; position: relative; margin-top: 0px; margin-bottom: 0px;
+    #classy,#uga, #gemquest, #more, #flavor {height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -191,8 +191,14 @@ p {
           align-items: center;
     -webkit-box-pack: center;
        -ms-flex-pack: center;
-     justify-content: center; }
+     justify-content: center;
+    }
 }
+
+@media only screen and (min-width: 992px) {
+    #classy,#uga, #gemquest, #more, #flavor {max-height: 700px;}
+}
+
 
 .moar a {
     font-size: 30px;
