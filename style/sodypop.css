@@ -104,7 +104,7 @@ p {
 #resume {
     float: left;
     background: #333333;
-    box-shadow: 6px 6px 0 0 #FDFF5E;
+    box-shadow: 6px 6px 0 0 #9519AA;
     border-radius: 10%;
     height: 60px;
     width: 95px;
@@ -119,20 +119,20 @@ p {
 }
 
 #resume:hover {
-    background-color: #FDFF5E;
+    background-color: #9519AA;
 }
 
-#resume, #twitter, #medium, #dribbble {
+#resume, #linkedin, #medium, #github, #dribbble {
     display: inline-block;
     margin-right: 20px;
     margin-top: 10px;
 }
 
-#twitter a:hover {
+#linkedin a:hover {
     background-color: #0077B5;
 }
 
-#twitter {
+#linkedin {
     box-shadow: 6px 6px 0 0 #0077B5;
     border-radius: 10%; 
 }
@@ -143,6 +143,15 @@ p {
 
 #medium {
     box-shadow: 6px 6px 0 0 #19AA6D;
+    border-radius: 10%; 
+}
+
+#github a:hover {
+    background-color: #00B5A0;
+}
+
+#github {
+    box-shadow: 6px 6px 0 0 #00B5A0;
     border-radius: 10%; 
 }
 
