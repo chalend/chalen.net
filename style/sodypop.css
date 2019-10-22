@@ -74,13 +74,6 @@ p {
     visibility:visible;
 }
 
-@media only screen and (max-width: 768px) {
-    #speech {
-        display: none;
-        visibility: hidden;
-    }
-}
-
 #social {
     text-align: left;
     width: 100%;
@@ -107,11 +100,6 @@ p {
     color: #FFF;
     font-size: 40px;
 }
-
-@media only screen and (max-width: 768px) {
-    #resume {display: none;}
-}
-
 
 #resume {
     float: left;
@@ -182,7 +170,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    #classy,#uga, #gemquest, #more, #flavor {height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
+    #classy,#uga, #gemquest, #more, #flavor {min-height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
