@@ -41,6 +41,18 @@ p {
     color: #333;
 }
 
+ul {
+    margin-top: -10px;
+}
+
+ul li {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #FFF;
+    opacity: .9;
+    line-height: 35px;
+}
+
 .role {
     opacity: .9;
 }
