@@ -1,0 +1,68 @@
+.container {
+    display: block;
+    margin: 0% 10%;
+}
+
+img {
+    display: block;
+    padding: 20px 0px;
+}
+
+.img-lg {
+    width: 100%;
+}
+
+.img-md {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-sm {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#divergence-row {
+    display: block;
+}
+
+#divergence-row img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #divergence-row {
+      display: flex;  
+    }
+    .img-md {
+        width: 75%;
+    }
+    .img-sm {
+        width: 50%;
+    }
+}
+
+h2, h3, h4, p, li {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    padding: 20px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 18px;
+    opacity: .8;
+    line-height: 28px;
+}
+
