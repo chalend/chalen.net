@@ -44,7 +44,7 @@ img {
     }
 }
 
-h2, h3, h4, p, li {
+h2, h4, p, li {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -57,6 +57,7 @@ h1 {
 h3 {
     font-size: 25px;
     padding-top: 20px;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
 }
 
@@ -64,5 +65,20 @@ p, li {
     font-size: 18px;
     opacity: .8;
     line-height: 28px;
+}
+
+.highlight {
+    background-color: #FFB782;
+}
+
+.orange {
+    background-color: #D65C04;
+    color: #FFF;
+    padding-bottom: 50px;
+    margin-top: 40px;
+}
+
+.orange p, .orange li {
+    opacity: 1;
 }
 
