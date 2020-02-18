@@ -1,19 +1,24 @@
+.container-fluid {
+    padding: 30px 100px;
+}
+
 @font-face {
     font-family: 'Arial';
     src: url('../fonts/Arial-Rounded-Bold.ttf');
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Arial', sans-serif;
-    font-size: 60px;
     color: #FFF;
     margin-bottom: 1rem;
 }
 
-h3 {
-    font-family: 'Arial', sans-serif;
-    color: #FFF;
-    margin-bottom: 1rem;
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 45px;
 }
 
 .link {
@@ -55,21 +60,30 @@ ul li {
 
 .role {
     opacity: .9;
+    font-size: 16px;
 }
 
 #uptop {
-    padding: 30px;
-    color: #FFF;
-    background-image: linear-gradient(45deg, #F34B72 0%, #F58C2B 100%);
+    color: #000;
 }
 
 #uptop a {
-    text-decoration: underline;
-    color: #FFF;
+    text-decoration: none;
+    color: #003BFF;
 }
 
 #uptop p {
-    color: #FFF;
+    color: #000;
+}
+
+#uptop h1 {
+    color: #000;
+    font: 'Merriweather', serif;
+}
+
+#profile-pic {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #bubble {
@@ -128,6 +142,7 @@ ul li {
 #resumeText {
     margin-top:16px;
     margin-left: 10px;
+    color: #fff !important;
 }
 
 #resume:hover {
@@ -180,6 +195,17 @@ ul li {
     color: #FFF;
 }
 
+#projects a:hover {
+    text-decoration: none;
+}
+
+#projects a:hover .project {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    transition: transform .3s ease;
+    transform: scale(1.01);
+}
+
 #linkypoo {
     text-decoration: underline;
     color: #FFF;
@@ -191,7 +217,7 @@ ul li {
 }
 
 @media only screen and (min-width: 768px) {
-    #classy,#uga, #gemquest, #more, #flavor {min-height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
+    #classy,#uga, #couchsurfing, #more, #flavor {min-height: 400px; position: relative; margin-top: 0px; margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -202,12 +228,21 @@ ul li {
        -ms-flex-pack: center;
      justify-content: center;
     }
+    
+    .classmatch-text h2, .classmatch-text p {
+        margin-left: 20px;
+    }   
 }
 
 @media only screen and (min-width: 992px) {
-    #classy,#uga, #gemquest, #more, #flavor {max-height: 700px;}
+    #classy,#uga, #couchsurfing, #more, #flavor {max-height: 700px;}
 }
 
+#couchsurfing, #uga, #classy {
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
 
 .moar a {
     font-size: 30px;
@@ -226,13 +261,14 @@ ul li {
     text-decoration: none;
 }
 
-#classmatch {
+#classmatch-img {
     margin-bottom: 15px;
 }
 
 #uga {
     background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
     padding: 30px;
+    border-radius: 8px;
 }
 
 #pixel {
@@ -244,7 +280,7 @@ ul li {
     #pixel {width:40vw;}
 }
 
-#gemquest {
+#couchsurfing {
 /*    background-image: linear-gradient(-43deg,#F0F2E8 20%, #7BC7E9 100%);*/
     background-image: linear-gradient(-120deg, #FAD961 0%, #F76B1C 69%);
     padding: 30px;
@@ -259,22 +295,30 @@ ul li {
     width: 70vw;
 }
 
+.rounded {
+    border-radius: 10px;
+}
+
 @media only screen and (min-width: 768px) {
     #freddie {width:30vw;}
 }
 
 #more {
-    padding: 30px;
-    background-image: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+    padding: 30px 0;
 }
 
 #more a {
-    color: #FFF;
-    text-decoration: underline;
+    color: #003BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#more p, #more h1 {
+    color: #000;
 }
 
 #flavor {
-    padding: 30px;
+    padding: 30px 0;
     color: #000;
 }
 
@@ -284,6 +328,10 @@ ul li {
 
 #contact {
     background-image: linear-gradient(-227deg, #ECB5BF 10%, #F3607B 100%);
+    border-radius: 15px;
+    margin: 30px 0px 0px 0px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+
 }
 
 #contact p {
@@ -294,12 +342,6 @@ ul li {
     color: #FFF;
     text-decoration:underline;
 }
-
-/*
-#contact br {
-    margin-top: 5vh;
-}
-*/
 
 #centered {
     margin-right: auto;
@@ -316,12 +358,27 @@ ul li {
     padding-bottom: 30px;
 }
 
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50);
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 500px) {
-    #uptop, #classy, #uga, #gemquest, #more, #flavor {
+    #uptop, #classy, #uga, #couchsurfing, #more, #flavor {
         padding: 10px;
     }
     #cs {
         font-size: 40px;
         padding-top: 15px;
+    }
+    .container-fluid {
+        padding: 20px 10px;
     }
 }
