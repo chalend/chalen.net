@@ -176,6 +176,12 @@ ul li {
     border-radius: 10%; 
 }
 
+#hireme {
+    display: block;
+    margin-top: 50px;
+    display: none;
+}
+
 .project p {
     color: #FFF;
 }

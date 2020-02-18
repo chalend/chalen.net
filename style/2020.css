@@ -1,0 +1,166 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    padding: 2em 10em;
+    align-items: center;
+    justify-items: start;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    padding: 30px 0 10px 0;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: #003BFF;
+    text-decoration: none;
+}
+
+.center {
+    justify-self: center;
+}
+
+.end {
+    justify-self: end;
+}
+
+.span {
+    grid-column: span 2;
+}
+
+.image-text {
+    position: absolute;
+    margin-right: 50%;
+    margin-left: 30%;
+    z-index: 10;
+}
+
+.project {
+    width: 100%;
+}
+
+.card-orange {
+    box-shadow: 6px 6px 0 0 #EF6500;
+    border-radius: 37.5px;
+}
+
+.card-purple {
+    box-shadow: 6px 6px 0 0 #8708FF;
+    border-radius: 37.5px;
+}
+
+.card p {
+    padding: 30px;
+    line-height: 30px;
+}
+
+.card .author {
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+#profile {
+    width: 20em;
+    margin: 15px 0 0 15px;
+}
+
+#social {
+    text-align: left;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#social a {
+    color: #fff;
+    text-align:center;
+    vertical-align:middle;
+    display:table-cell;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+}
+
+#socialFA a {
+    background-color: #333;
+    height: 60px;
+    width: 60px;
+    border-radius: 10%;
+    color: #FFF;
+    font-size: 40px;
+}
+
+#resume {
+    float: left;
+    background: #333333;
+    box-shadow: 6px 6px 0 0 #9519AA;
+    border-radius: 10%;
+    height: 60px;
+    width: 95px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+#resumeText {
+    margin-top:16px;
+    margin-left: 10px;
+}
+
+#resume:hover {
+    background-color: #9519AA;
+}
+
+#resume, #linkedin, #medium, #github, #dribbble {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#linkedin a:hover {
+    background-color: #0077B5;
+}
+
+#linkedin {
+    box-shadow: 6px 6px 0 0 #0077B5;
+    border-radius: 10%; 
+}
+
+#medium a:hover {
+    background-color: #19AA6D;
+}
+
+#medium {
+    box-shadow: 6px 6px 0 0 #19AA6D;
+    border-radius: 10%; 
+}
+
+#github a:hover {
+    background-color: #00B5A0;
+}
+
+#github {
+    box-shadow: 6px 6px 0 0 #00B5A0;
+    border-radius: 10%; 
+}
+
+#couchsurfing {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
