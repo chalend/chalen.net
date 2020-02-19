@@ -94,6 +94,7 @@ ul li {
     margin-top: auto;
     margin-bottom: auto;
     float: right;
+    width: 100%;
 }
 
 #bubble {
@@ -399,11 +400,18 @@ ul li {
     #uptop, #classy, #uga, #couchsurfing, #more, #flavor {
         padding: 10px;
     }
+    #couchsurfing .text, #classy .text, #uga .text {
+        padding: 40px 0;
+    }
     #cs {
         font-size: 40px;
         padding-top: 15px;
     }
     .container-fluid {
         padding: 20px 10px;
+    }
+    
+    #more h1 {
+        padding: 10px 0 0 0;
     }
 }
