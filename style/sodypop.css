@@ -350,7 +350,7 @@ ul li {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 991px) {
     #profile-pic {
         padding: 30px 0 10px 0;
         width: 80%;
@@ -360,16 +360,22 @@ ul li {
         padding: 40px 0;
     }
     #more h1 {
-        padding: 20px 0 0 0;
+        padding: 20px 0 5px 0;
+    }
+    #more {
+        padding: 20px 0;
+    }
+    #flavor {
+        padding: 20px 0;
+    }
+    #more img, #flavor img {
+        float: none;
     }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 600px) {
     #uptop, #classy, #uga, #couchsurfing {
         padding: 10px;
-    }
-    #cs {
-        font-size: 40px;
     }
     .container-fluid {
         padding: 20px 10px;
@@ -384,6 +390,9 @@ ul li {
 
 @media only screen and (max-width: 400px) {
     #more h1 {
+        font-size: 40px;
+    }
+    #cs {
         font-size: 40px;
     }
 }
