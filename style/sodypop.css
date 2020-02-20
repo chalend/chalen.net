@@ -228,11 +228,6 @@ ul li {
     text-align: center;
 }
 
-#linkypoo {
-    text-decoration: underline;
-    color: #FFF;
-}
-
 #classy {
     background-image: linear-gradient(-188deg, #0B6CFF 0%, #30CDDE 100%);
     padding: 30px;
@@ -262,27 +257,6 @@ ul li {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
 
-.moar a {
-    font-size: 30px;
-    color: #FFF;
-    opacity: .6;
-
-}
-
-.moar i {
-    padding: 5px;
-}
-
-.moar a:hover {
-    color: #FFF;
-    opacity: 1;
-    text-decoration: none;
-}
-
-#classmatch-img {
-    margin-bottom: 15px;
-}
-
 #uga {
     background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
     padding: 30px;
@@ -302,15 +276,6 @@ ul li {
 /*    background-image: linear-gradient(-43deg,#F0F2E8 20%, #7BC7E9 100%);*/
     background-image: linear-gradient(-120deg, #FAD961 0%, #F76B1C 69%);
     padding: 30px;
-}
-
-#words {
-    padding: 50px;
-}
-
-#freddie {
-    margin-top: 20px;
-    width: 70vw;
 }
 
 .rounded {
@@ -375,11 +340,6 @@ ul li {
     text-align: center;
 }
 
-#sign-chalen {
-    width: 400px;
-    margin-top: 60px;
-}
-
 .rock-bottom {
     padding-bottom: 30px;
 }
@@ -410,7 +370,9 @@ ul li {
     .container-fluid {
         padding: 20px 10px;
     }
-    
+    #github {
+        display: none;
+    }
     #more h1 {
         padding: 10px 0 0 0;
     }
