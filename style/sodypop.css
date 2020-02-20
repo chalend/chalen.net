@@ -358,7 +358,7 @@ ul li {
 }
 
 @media only screen and (max-width: 510px) {
-    #uptop, #classy, #uga, #couchsurfing, #more, #flavor {
+    #uptop, #classy, #uga, #couchsurfing {
         padding: 10px;
     }
     #couchsurfing .text, #classy .text, #uga .text {
@@ -374,6 +374,12 @@ ul li {
         display: none;
     }
     #more h1 {
-        padding: 10px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #more h1 {
+        font-size: 40px;
     }
 }
