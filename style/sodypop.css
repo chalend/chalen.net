@@ -8,6 +8,7 @@ body {
 
 .container-fluid {
     padding: 30px 100px;
+    max-width: 1200px;
 }
 
 @font-face {
@@ -356,7 +357,7 @@ ul li {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
     #uptop, #classy, #uga, #couchsurfing, #more, #flavor {
         padding: 10px;
     }
@@ -365,7 +366,6 @@ ul li {
     }
     #cs {
         font-size: 40px;
-        padding-top: 15px;
     }
     .container-fluid {
         padding: 20px 10px;
