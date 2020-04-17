@@ -1,19 +1,33 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative
+}
+
+.container-fluid {
+    padding: 30px 100px;
+    max-width: 1200px;
+}
+
 @font-face {
     font-family: 'Arial';
     src: url('../fonts/Arial-Rounded-Bold.ttf');
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Arial', sans-serif;
-    font-size: 60px;
     color: #FFF;
     margin-bottom: 1rem;
 }
 
-h3 {
-    font-family: 'Arial', sans-serif;
-    color: #FFF;
-    margin-bottom: 1rem;
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 45px;
 }
 
 .link {
@@ -41,23 +55,47 @@ p {
     color: #333;
 }
 
+ul {
+    margin-top: -10px;
+}
+
+ul li {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #FFF;
+    opacity: .9;
+    line-height: 35px;
+}
+
 .role {
     opacity: .9;
+    font-size: 16px;
 }
 
 #uptop {
-    padding: 30px;
-    color: #FFF;
-    background-image: linear-gradient(45deg, #F34B72 0%, #F58C2B 100%);
+    color: #000;
+    padding: 40px 0;
 }
 
 #uptop a {
-    text-decoration: underline;
-    color: #FFF;
+    text-decoration: none;
+    color: #003BFF;
 }
 
 #uptop p {
-    color: #FFF;
+    color: #000;
+}
+
+#uptop h1 {
+    color: #000;
+    font: 'Merriweather', serif;
+}
+
+#profile-pic {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    width: 100%;
 }
 
 #bubble {
@@ -74,18 +112,10 @@ p {
     visibility:visible;
 }
 
-@media only screen and (max-width: 768px) {
-    #speech {
-        display: none;
-        visibility: hidden;
-    }
-}
-
 #social {
     text-align: left;
     width: 100%;
     margin-left: 5px;
-    margin-bottom: 20px;
     display: inline-block;
 }
 
@@ -108,15 +138,10 @@ p {
     font-size: 40px;
 }
 
-@media only screen and (max-width: 768px) {
-    #resume {display: none;}
-}
-
-
 #resume {
     float: left;
     background: #333333;
-    box-shadow: 6px 6px 0 0 #FDFF5E;
+    box-shadow: 6px 6px 0 0 #9519AA;
     border-radius: 10%;
     height: 60px;
     width: 95px;
@@ -128,23 +153,24 @@ p {
 #resumeText {
     margin-top:16px;
     margin-left: 10px;
+    color: #fff !important;
 }
 
 #resume:hover {
-    background-color: #FDFF5E;
+    background-color: #9519AA;
 }
 
-#resume, #twitter, #medium, #dribbble {
+#resume, #linkedin, #medium, #github, #dribbble {
     display: inline-block;
     margin-right: 20px;
     margin-top: 10px;
 }
 
-#twitter a:hover {
+#linkedin a:hover {
     background-color: #0077B5;
 }
 
-#twitter {
+#linkedin {
     box-shadow: 6px 6px 0 0 #0077B5;
     border-radius: 10%; 
 }
@@ -155,6 +181,15 @@ p {
 
 #medium {
     box-shadow: 6px 6px 0 0 #19AA6D;
+    border-radius: 10%; 
+}
+
+#github a:hover {
+    background-color: #00B5A0;
+}
+
+#github {
+    box-shadow: 6px 6px 0 0 #00B5A0;
     border-radius: 10%; 
 }
 
@@ -171,9 +206,26 @@ p {
     color: #FFF;
 }
 
-#linkypoo {
-    text-decoration: underline;
-    color: #FFF;
+#projects a:hover {
+    text-decoration: none;
+}
+
+#projects a:hover .project {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    transition: transform .3s ease;
+    transform: scale(1.01);
+}
+
+#projects img {
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#projects .text {
+    text-align: center;
 }
 
 #classy {
@@ -182,7 +234,7 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    #classy,#uga, #gemquest, #more, #flavor {height: 100vh; position: relative; margin-top: 0px; margin-bottom: 0px;
+    #classy,#uga, #couchsurfing, #more, #flavor {min-height: 400px; position: relative; margin-top: 0px; margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -196,58 +248,32 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-    #classy,#uga, #gemquest, #more, #flavor {max-height: 700px;}
+    #classy,#uga, #couchsurfing, #more, #flavor {max-height: 700px;}
 }
 
-
-.moar a {
-    font-size: 30px;
-    color: #FFF;
-    opacity: .6;
-
-}
-
-.moar i {
-    padding: 5px;
-}
-
-.moar a:hover {
-    color: #FFF;
-    opacity: 1;
-    text-decoration: none;
-}
-
-#classmatch {
-    margin-bottom: 15px;
+#couchsurfing, #uga, #classy {
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
 
 #uga {
     background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
     padding: 30px;
-}
-
-#pixel {
-    width: 90vw;
-    margin-top: 20px;
+    border-radius: 8px;
 }
 
 @media only screen and (min-width: 768px) {
     #pixel {width:40vw;}
 }
 
-#gemquest {
-/*    background-image: linear-gradient(-43deg,#F0F2E8 20%, #7BC7E9 100%);*/
+#couchsurfing {
     background-image: linear-gradient(-120deg, #FAD961 0%, #F76B1C 69%);
     padding: 30px;
 }
 
-#words {
-    padding: 50px;
-}
-
-#freddie {
-    margin-top: 20px;
-    width: 70vw;
+.rounded {
+    border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,17 +281,25 @@ p {
 }
 
 #more {
-    padding: 30px;
-    background-image: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+    padding: 60px 0;
 }
 
 #more a {
-    color: #FFF;
-    text-decoration: underline;
+    color: #003BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#more p, #more h1 {
+    color: #000;
+}
+
+#more .highlight {
+    background-color: #DCE4FF;
 }
 
 #flavor {
-    padding: 30px;
+    padding: 30px 0;
     color: #000;
 }
 
@@ -273,24 +307,31 @@ p {
     color: #F24464;
 }
 
+#flavor img {
+    float:right;
+}
+
 #contact {
     background-image: linear-gradient(-227deg, #ECB5BF 10%, #F3607B 100%);
+    border-radius: 15px;
+    margin: 30px 0px 0px 0px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+#contact:hover .row {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    transition: transform .3s ease;
+    transform: scale(1.01);
+}
+
+#contact:hover a {
+    text-decoration: none;
 }
 
 #contact p {
     color: #FFF;
 }
-
-#contact a {
-    color: #FFF;
-    text-decoration:underline;
-}
-
-/*
-#contact br {
-    margin-top: 5vh;
-}
-*/
 
 #centered {
     margin-right: auto;
@@ -298,21 +339,65 @@ p {
     text-align: center;
 }
 
-#sign-chalen {
-    width: 400px;
-    margin-top: 60px;
-}
-
 .rock-bottom {
     padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 500px) {
-    #uptop, #classy, #uga, #gemquest, #more, #flavor {
+.button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    #profile-pic {
+        padding: 30px 0 10px 0;
+        width: 80%;
+        float: none;
+    }
+    #couchsurfing .text, #classy .text, #uga .text {
+        padding: 40px 0;
+    }
+    #more h1 {
+        padding: 20px 0 5px 0;
+    }
+    #more {
+        padding: 20px 0;
+    }
+    #flavor {
+        padding: 20px 0;
+    }
+    #more img, #flavor img {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #uptop, #classy, #uga, #couchsurfing {
         padding: 10px;
+    }
+    .container-fluid {
+        padding: 20px 10px;
+    }
+    #github {
+        display: none;
+    }
+    #uptop h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #more h1 {
+        font-size: 40px;
     }
     #cs {
         font-size: 40px;
-        padding-top: 15px;
     }
 }
