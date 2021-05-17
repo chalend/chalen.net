@@ -44,12 +44,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 <script>
     var randomize = function(){
-        roll = Math.floor(Math.random()*3);          
+        roll = Math.floor(Math.random()*4);          
         if (roll == 0){
             document.getElementById("image").src = "img/art/pbr.png";
         }
         else if (roll == 1){
             document.getElementById("image").src = "img/art/chalenwarming.png";
+        }
+        else if (roll == 2){
+            document.getElementById("image").src = "img/art/tahoes.jpg";
         }
         else {
             document.getElementById("image").src = "img/art/sink.png";
