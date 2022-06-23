@@ -38,6 +38,8 @@ h2 {
 
 .link:hover {
     color: #FFF;
+    text-decoration: underline;
+    font-weight: bold;
     opacity: 1;
 }
 
@@ -47,6 +49,11 @@ h2 {
 
 .link:visited {
     color: #FFF;
+}
+
+.img-fluid:hover {
+  transition: transform .3s ease;
+  transform: scale(1.015);
 }
 
 p {
@@ -68,7 +75,7 @@ ul li {
 }
 
 .role {
-    opacity: .9;
+    opacity: .73;
     font-size: 16px;
 }
 
@@ -80,6 +87,10 @@ ul li {
 #uptop a {
     text-decoration: none;
     color: #003BFF;
+}
+
+#uptop a:hover {
+  text-decoration: underline;
 }
 
 #uptop p {
@@ -102,7 +113,7 @@ ul li {
     position: absolute;
 }
 
-#speech {  
+#speech {
     position: absolute;
     visibility: hidden;
     z-index: 1;
@@ -172,7 +183,7 @@ ul li {
 
 #linkedin {
     box-shadow: 6px 6px 0 0 #0077B5;
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
 #medium a:hover {
@@ -181,7 +192,7 @@ ul li {
 
 #medium {
     box-shadow: 6px 6px 0 0 #19AA6D;
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
 #github a:hover {
@@ -190,7 +201,7 @@ ul li {
 
 #github {
     box-shadow: 6px 6px 0 0 #00B5A0;
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
 #dribbble a:hover {
@@ -199,23 +210,32 @@ ul li {
 
 #dribbble {
     box-shadow: 6px 6px 0 0 #EA4C89;
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
 .project p {
     color: #FFF;
 }
 
-#projects a:hover {
-    text-decoration: none;
+#projects a {
+  opacity: 1;
 }
 
-#projects a:hover .project {
+#projects a:hover {
+  font-weight:bold;
+  background-color: rgba(0,0,0,.2);
+}
+
+/* #projects a:hover {
+    text-decoration: none;
+} */
+
+/* #projects a:hover .project {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
     overflow: hidden;
     transition: transform .3s ease;
     transform: scale(1.01);
-}
+} */
 
 #projects img {
     width: 90%;
@@ -224,17 +244,19 @@ ul li {
     margin-left: auto;
 }
 
-#projects .text {
-    text-align: center;
+#projects h5 {
+  color: #fff;
+  opacity: .73;
+  font-size: 16px;
+  font-weight: normal;
 }
 
-#classy {
-    background-image: linear-gradient(-188deg, #0B6CFF 0%, #30CDDE 100%);
-    padding: 30px;
+#projects .text {
+    text-align: left;
 }
 
 @media only screen and (min-width: 768px) {
-    #classy,#uga, #couchsurfing, #more, #flavor {min-height: 400px; position: relative; margin-top: 0px; margin-bottom: 0px;
+    #globalid,#uga, #couchsurfing, #more, #flavor {min-height: 400px; position: relative; margin-top: 0px; margin-bottom: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -248,19 +270,24 @@ ul li {
 }
 
 @media only screen and (min-width: 992px) {
-    #classy,#uga, #couchsurfing, #more, #flavor {max-height: 700px;}
+    #globalid,#uga, #couchsurfing, #more, #flavor {max-height: 700px;}
 }
 
-#couchsurfing, #uga, #classy {
-    border-radius: 15px;
-    margin: 20px 0;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+#couchsurfing, #uga, #globalid {
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+#globalid {
+    background-image: linear-gradient(-188deg, #0B6CFF 0%, #30CDDE 100%);
+    padding: 30px;
+    box-shadow: 15px 15px 0px 0 #0B6CFF;
 }
 
 #uga {
     background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
     padding: 30px;
-    border-radius: 8px;
+    box-shadow: 15px 15px 0px 0 #9F041B;
 }
 
 @media only screen and (min-width: 768px) {
@@ -268,8 +295,9 @@ ul li {
 }
 
 #couchsurfing {
-    background-image: linear-gradient(-120deg, #FAD961 0%, #F76B1C 69%);
+    background-image: linear-gradient(-50deg, #FAD961  0%, #F76B1C 70%);
     padding: 30px;
+    box-shadow: 15px 15px 0px 0 #F76B1C;
 }
 
 .rounded {
@@ -285,9 +313,14 @@ ul li {
 }
 
 #more a {
-    color: #003BFF;
+    /* color: #003BFF; */
+    color: #4B2CFC;
     text-decoration: none;
     font-weight: bold;
+}
+
+#more a:hover {
+  text-decoration: underline;
 }
 
 #more p, #more h1 {
@@ -295,7 +328,7 @@ ul li {
 }
 
 #more .highlight {
-    background-color: #DCE4FF;
+    background-color: #EEECFE;
 }
 
 #flavor {
@@ -303,8 +336,17 @@ ul li {
     color: #000;
 }
 
-#flavor h1, #flavor a {
-    color: #F24464;
+#flavor h1 {
+  color: #000;
+}
+
+#flavor a {
+    /* color: #F24464; */
+    color: #008031;
+}
+
+#flavor a {
+  font-weight: bold;
 }
 
 #flavor img {
@@ -313,16 +355,17 @@ ul li {
 
 #contact {
     background-image: linear-gradient(-227deg, #ECB5BF 10%, #F3607B 100%);
-    border-radius: 15px;
+    border-radius: 10px;
     margin: 30px 0px 0px 0px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    box-shadow: -15px 15px 0px 0 #F3607B;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50); */
 }
 
 #contact:hover .row {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50); */
     overflow: hidden;
     transition: transform .3s ease;
-    transform: scale(1.01);
+    transform: scale(1.015);
 }
 
 #contact:hover a {
@@ -339,11 +382,23 @@ ul li {
     text-align: center;
 }
 
+.photos {
+  border-radius: 10px;
+}
+
+#parts {
+  box-shadow: -15px -15px 0px 0 #C3B8FE;
+}
+
+#bikepacking {
+  box-shadow: 15px 15px 0px 0 #008031;
+}
+
 .rock-bottom {
     padding-bottom: 30px;
 }
 
-.button {
+/* .button {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     border-radius: 20px;
@@ -353,7 +408,7 @@ ul li {
     border: none;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50);
     margin-bottom: 20px;
-}
+} */
 
 @media only screen and (max-width: 991px) {
     #profile-pic {
@@ -361,7 +416,7 @@ ul li {
         width: 80%;
         float: none;
     }
-    #couchsurfing .text, #classy .text, #uga .text {
+    #couchsurfing .text, #globalid .text, #uga .text {
         padding: 40px 0;
     }
     #more h1 {
@@ -379,7 +434,7 @@ ul li {
 }
 
 @media only screen and (max-width: 600px) {
-    #uptop, #classy, #uga, #couchsurfing {
+    #uptop, #globalid, #uga, #couchsurfing {
         padding: 10px;
     }
     .container-fluid {
