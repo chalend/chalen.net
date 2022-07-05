@@ -308,8 +308,57 @@ ul li {
     #freddie {width:30vw;}
 }
 
+#references {
+  margin: 60px 0px;
+}
+
+#references h1 {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#references a {
+  font-weight: bold; -style
+}
+
+.quote {
+  padding: 20px 20px 5px 20px;
+  margin: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  /* font-style: italic; */
+  height: 100%;
+}
+
+.quoted {
+  font-style: normal;
+  text-align: right;
+}
+
+.quoted a {
+  font-weight: bold;
+}
+
+#jesse-ref {
+  box-shadow: -15px 15px 0px 0 #FFD131;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#angie-ref {
+  box-shadow: 15px -15px 0px 0 #F76B1C;
+  float: right;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+
 #more {
     padding: 60px 0;
+}
+
+#more h1 {
+  margin-bottom: 20px;
 }
 
 #more a {
@@ -338,6 +387,7 @@ ul li {
 
 #flavor h1 {
   color: #000;
+  margin-bottom: 20px;
 }
 
 #flavor a {
