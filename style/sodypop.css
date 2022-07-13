@@ -309,7 +309,7 @@ ul li {
 }
 
 #references {
-  margin: 60px 0px;
+  margin: 30px 0px;
 }
 
 #references h1 {
@@ -340,13 +340,13 @@ ul li {
 }
 
 #jesse-ref {
-  box-shadow: -15px 15px 0px 0 #FFD131;
+  box-shadow: -15px -15px 0px 0 #FFD131;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 #angie-ref {
-  box-shadow: 15px -15px 0px 0 #F76B1C;
+  box-shadow: -15px -15px 0px 0 #F76B1C;
   float: right;
   margin-top: auto;
   margin-bottom: 40px;
