@@ -171,7 +171,7 @@ ul li {
     background-color: #9519AA;
 }
 
-#resume, #linkedin, #medium, #github, #dribbble {
+#resume, #linkedin, #medium, #github, #dribbble, #email {
     display: inline-block;
     margin-right: 20px;
     margin-top: 10px;
@@ -202,6 +202,15 @@ ul li {
 #github {
     box-shadow: 6px 6px 0 0 #00B5A0;
     border-radius: 10%;
+}
+
+#email a:hover {
+    background-color: #9519AA;
+}
+
+#email {
+  box-shadow: 6px 6px 0 0 #9519AA;
+  border-radius: 10%;
 }
 
 #dribbble a:hover {
@@ -312,6 +321,11 @@ ul li {
   margin: 30px 0px;
 }
 
+.quote:hover {
+  transition: transform .3s ease;
+  transform: scale(1.015);
+}
+
 #references h1 {
   color: #000;
   margin-bottom: 20px;
@@ -403,16 +417,41 @@ ul li {
     float:right;
 }
 
+/* #contact {
+  padding: 20px 20px 20px 20px;
+  margin: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: -15px -15px 0px 0 #FFD131;
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
 #contact {
+  margin: 60px 0px;
+}
+
+#contact h1 {
+  color: #000;
+}
+
+#contact-text {
+  padding: 0px 30px;
+}
+
+#sticky {
+  box-shadow: -15px -15px 0px 0 #F3607B;
+}
+
+/* #contact {
     background-image: linear-gradient(-227deg, #ECB5BF 10%, #F3607B 100%);
     border-radius: 10px;
     margin: 30px 0px 0px 0px;
     box-shadow: -15px 15px 0px 0 #F3607B;
-    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50); */
 }
 
 #contact:hover .row {
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50); */
     overflow: hidden;
     transition: transform .3s ease;
     transform: scale(1.015);
@@ -424,7 +463,7 @@ ul li {
 
 #contact p {
     color: #FFF;
-}
+} */
 
 #centered {
     margin-right: auto;
@@ -495,6 +534,15 @@ ul li {
     }
     #uptop h1 {
         font-size: 40px;
+    }
+    #sticky {
+      display: none;
+    }
+    .photos {
+      box-shadow: none !important;
+    }
+    .project {
+      box-shadow: none !important;
     }
 }
 
