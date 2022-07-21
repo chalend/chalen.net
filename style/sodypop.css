@@ -293,6 +293,10 @@ ul li {
     box-shadow: 15px 15px 0px 0 #0B6CFF;
 }
 
+#globalid img {
+  width:70%;
+}
+
 #uga {
     background-image: linear-gradient(6deg, #FF0017 0%, #9F041B 100%);
     padding: 30px;
